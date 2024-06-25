@@ -30,7 +30,7 @@ impl<'a> System<'a> for GameplayStateSystem {
         // box at that position. since we now have different types of boxes
         // we need to make sure the right type of box is on the right
         // type of spot.
-        for (box_spot, position) in (&box_spots, &positions).join() {
+        for (box_spot, positio--n) in (&box_spots, &positions).join() {
             if let Some(the_box) = boxes_by_position.get(&(position.x, position.y)) {
                 if the_box.colour == box_spot.colour {
                     // continue
